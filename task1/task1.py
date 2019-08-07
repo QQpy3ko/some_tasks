@@ -12,8 +12,6 @@ if __name__ == "__main__":
     with open(sys.argv[1], "r") as input_file:
         file_content = input_file.read()
         lines  = file_content.splitlines()
-        int_lines = []
-
         int_lines = [int(i) for i in lines]
 
         percentile = numpy.percentile(int_lines, 90)
